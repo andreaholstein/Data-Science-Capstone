@@ -18,10 +18,21 @@
 ## Challenges on the Horizon
 
 - We feel like we can already assume who the target demographic of our brand is - our challenge is to perform our analysis agnostic of that assumption to see if our hypothesis aligns with our conclusion.
+- Inital dataset was not suitable for our business problem. We sourced another dataset from Kaggle. 
+- The data may be biased. 
+
+## Strategies 
+
+- Creating a heatmap to look at geographical trends 
+- A bar chart to see purchase amount versus location. 
+
+
+## Methodology 
+
 
 ## The Team:
 
-- Andrea Holstein - [GitHub](https://www.linkedin.com/in/andrea-holstein/) - [LinkedIn](https://www.linkedin.com/in/andrea-holstein/)
+- Andrea Holstein - [GitHub](https://www.github.com/andreaholstein/) - [LinkedIn](https://www.linkedin.com/in/andrea-holstein/)
 - Joanne Leung - [Github](https://github.com/code-me-matcha)
 - Mirian Quispe Sarmiento - [Github](https://github.com/KiraLei)
 - Crystal Chow - [Github](https://github.com/taltalchow)
