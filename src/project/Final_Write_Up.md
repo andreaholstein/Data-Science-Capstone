@@ -13,7 +13,7 @@
 
 ## Dataset Used
 
-- [Dataset from Kaggle](https://www.kaggle.com/datasets/datascientistanna/customers-dataset)
+- [Shop Customer Data Dataset from Kaggle](https://www.kaggle.com/datasets/datascientistanna/customers-dataset)
 
 ## Project Overview (Table of Contents)
 
