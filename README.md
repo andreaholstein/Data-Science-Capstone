@@ -18,8 +18,8 @@
 ## Challenges on the Horizon
 
 - We feel like we can already assume who the target demographic of our brand is - our challenge is to perform our analysis agnostic of that assumption to see if our hypothesis aligns with our conclusion.
-- Inital dataset was not suitable for our business problem. We sourced another dataset from Kaggle. 
-- The data may be biased. 
+- Inital dataset was not suitable for our business problem. We sourced another dataset from Kaggle.
+- The data may be biased.
 
 ## The Team:
 
@@ -31,6 +31,7 @@
 - Aysegul Bozkurt - [Github](https://github.com/ayseboz)
 
 ---
+
 ## Project Overview (Table of Contents)
 
 ### Requirements:
@@ -58,17 +59,21 @@ Additionally, we used Jupyter notebooks to run all the code, and our dataset is-
 To evaluate potential store locations and customer behavior patterns, the following multi-step methodology was applied:
 
 1. Data Preprocessing & Cleaning
+
 - Loaded and cleaned the customer dataset using Pandas.
 - Handled missing values, standardized column names, and transformed categorical features where necessary.
 
 2. Exploratory Data Analysis (EDA)
+
 - Used Seaborn, Matplotlib, and Plotly Express to explore customer distribution by age, gender, location, and purchasing behavior.
 - Identified key metrics such as total spending, repeat purchases, and product category trends across different regions.
 
 3. Dealing with Class Imbalance
+
 - Applied resampling techniques to balance customer classes when modeling or analyzing groups
 
 4. Visualization Dashboards
+
 - Bar Charts – For comparing category-level totals (e.g., product categories, locations).
 - Heatmaps – For visualizing customer concentration across locations
 - Count Plots – To show distribution of customers by gender and other discrete features
@@ -77,6 +82,7 @@ To evaluate potential store locations and customer behavior patterns, the follow
 - Scatter Plots – For bubble charts showing relationships between customer count, repeat purchases, and total spend.
 
 5. Geographic Analysis
+
 - Heatmaps and bubble charts use to represent store location potential and customer behavior density.
 
 ### Review of Raw Data and Exploratory Data Analysis:
@@ -148,6 +154,7 @@ Next, we identified the top ten states by total purchase value. Montana had the 
 We then analyzed purchasing behavior within both Montana and Alabama, focusing on the Clothing category, and identified the most frequently purchased items. This can help guide targeted promotions, inform inventory planning, and influence store setup.
 
 # Results
+
 We found that while Montana generated the most revenue overall, Alabama customers made more repeat purchases and spent more on average. Clothing significantly outperformed Accessories, Footwear, and Outerwear in total sales. In Montana, the top sellers were socks, pants, and jeans. In Alabama, pants, shirts, skirts, and jeans were the most popular.
 
 ## Final Conclusions:
@@ -170,12 +177,12 @@ These regions combine:large and loyal customer base High total spending
 
 To help determine the optimal location for the brand’s new store and identify the store launch promotion strategy, we created two key visualizations:
 
-Top 10 Locations by Total Purchase 
+Top 10 Locations by Total Purchase
 
 Top 10 Locations by Number of Previous Purchases
 
 - Why Top 10?
-We focused on the Top 10 performing locations instead of visualizing all locations for the following reasons:
+  We focused on the Top 10 performing locations instead of visualizing all locations for the following reasons:
 
 1. Clarity: Presenting all geographic locations would lead to a cluttered and less interpretable visualization. By narrowing down to the top 10, we spotlight the areas with the most promising business potential.
 
@@ -202,4 +209,5 @@ Strategic Value: Marketing teams can tailor store launch campaigns to loyal cust
 ### Team Videos:
 
 ### Reproducibility:
---- 
+
+---
