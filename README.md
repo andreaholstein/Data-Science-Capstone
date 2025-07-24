@@ -25,7 +25,6 @@ Our analysis aims to:
 
 This project showcases the power of **data-driven decision-making** in the retail and commerce sector, with a focus on identifying actionable business opportunities through rigorous analysis.
 
-
 ## 💼 Business Motivation
 
 By analyzing customer demographics and purchase behaviors, this project aims to:
@@ -52,8 +51,6 @@ By analyzing customer demographics and purchase behaviors, this project aims to:
 - Crystal Chow - [Github](https://github.com/taltalchow)
 - Dianne Dumalag - [Github](https://github.com/ddumalag)
 - Aysegul Bozkurt - [Github](https://github.com/ayseboz)
-
----
 
 ### 💻Requirements:
 
@@ -395,5 +392,5 @@ These insights support **strategic decisions** around:
 
 All project code, data, and documentation are publicly accessible in our GitHub repository. The README includes detailed instructions on data access, software dependencies, and environment setup to enable full reproduction of the analysis and results.
 
-
 ---
+
