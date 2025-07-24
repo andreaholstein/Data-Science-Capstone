@@ -153,11 +153,50 @@ Next, we identified the top ten states by total purchase value. Montana had the 
 
 We then analyzed purchasing behavior within both Montana and Alabama, focusing on the Clothing category, and identified the most frequently purchased items. This can help guide targeted promotions, inform inventory planning, and influence store setup.
 
+- purchase amount by location
+- previous purchases by location
+
+Visualizing Top 10 Locations by Purchase Amount and Previous Purchases
+
+To help determine the optimal location for the brand’s new store and identify the store launch promotion strategy, we created two key visualizations:
+
+Top 10 Locations by Total Purchase 
+
+Top 10 Locations by Number of Previous Purchases
+
+- Why Top 10?
+We focused on the Top 10 performing locations instead of visualizing all locations for the following reasons:
+
+1. Clarity: Presenting all geographic locations would lead to a cluttered and less interpretable visualization. By narrowing down to the top 10, we spotlight the areas with the most promising business potential.
+
+2. Decision-Making Efficiency: Our key stakeholders — including the marketing, sales, finance, and senior leadership teams — need actionable insights quickly. This targeted approach highlights only the highest-performing locations, which are most relevant for high-impact business decisions like store placement and promotion allocation.
+
+3. ROI-Oriented Planning: Focusing on top-performing areas ensures that marketing efforts and capital investments are directed toward locations with proven customer engagement and purchasing power.
+
+---
+
+Graph 1: Total Purchase Amount by Location
+This bar chart shows which geographic locations generated the highest overall purchase revenue.
+
+Business Insight: Locations with the highest purchase totals are likely to have a strong base of high-value customers. These areas may represent untapped potential for upselling through targeted promotions, or be ideal for locating a new store where customers already spend heavily online.
+
+Strategic Value: For the finance team and senior leadership, this helps prioritize budget allocation to regions with the highest historical sales performance. For product managers and marketers, it informs which locations are more responsive to current offerings.
+
+---
+
+Graph 2: Number of Previous Purchases by Location
+
+This chart visualizes locations with the most frequent returning shoppers.
+
+Business Insight: A high number of previous purchases indicates strong brand loyalty and engagement — even if the total purchase amount is moderate. These customers are likely to respond well to promotional incentives tied to in-store experiences.
+
+Strategic Value: Marketing teams can tailor store launch campaigns to loyal customer bases in these locations, boosting foot traffic. Data analysts and product managers can explore if specific product categories or promotions drove repeated purchases in these areas.
+
 # Results
 
 We found that while Montana generated the most revenue overall, Alabama customers made more repeat purchases and spent more on average. Clothing significantly outperformed Accessories, Footwear, and Outerwear in total sales. In Montana, the top sellers were socks, pants, and jeans. In Alabama, pants, shirts, skirts, and jeans were the most popular.
 
-## Final Conclusions:
+## 🧠Final Conclusions:
 
 - The most attractive locations for opening a new store are those with a high number of customers, strong loyalty, and large total spending.
 - These are visualized as large, dark bubbles in the upper-right of the plot.
@@ -173,36 +212,15 @@ These regions combine:large and loyal customer base High total spending
 - Illinois is a well-balanced candidate with strong scores across the board.
 - California has the largest customer base, but relatively lower repeat purchases, so may need loyalty incentives.
 
-📊 Visualizing Top 10 Locations by Purchase Amount and Previous Purchases
+From our analysis, we identified:
 
-To help determine the optimal location for the brand’s new store and identify the store launch promotion strategy, we created two key visualizations:
+- The top 10 locations by **total purchase amount**, which highlights where the **most revenue** is coming from.
+- The top 10 locations by **number of previous purchases**, indicating where our **most engaged or frequent customers** are located.
 
-Top 10 Locations by Total Purchase
+By comparing these two lists, we can better understand **which locations have both high value and high frequency**, and tailor marketing or customer loyalty efforts accordingly.
 
-Top 10 Locations by Number of Previous Purchases
+These insights are critical for strategic decisions in targeted advertising, customer retention programs, and inventory planning across locations.
 
-- Why Top 10?
-  We focused on the Top 10 performing locations instead of visualizing all locations for the following reasons:
-
-1. Clarity: Presenting all geographic locations would lead to a cluttered and less interpretable visualization. By narrowing down to the top 10, we spotlight the areas with the most promising business potential.
-
-2. Decision-Making Efficiency: Our key stakeholders — including the marketing, sales, finance, and senior leadership teams — need actionable insights quickly. This targeted approach highlights only the highest-performing locations, which are most relevant for high-impact business decisions like store placement and promotion allocation.
-
-3. ROI-Oriented Planning: Focusing on top-performing areas ensures that marketing efforts and capital investments are directed toward locations with proven customer engagement and purchasing power.
-
-📍 Graph 1: Total Purchase Amount by Location
-This bar chart shows which geographic locations generated the highest overall purchase revenue.
-
-Business Insight: Locations with the highest purchase totals are likely to have a strong base of high-value customers. These areas may represent untapped potential for upselling through targeted promotions, or be ideal for locating a new store where customers already spend heavily online.
-
-Strategic Value: For the finance team and senior leadership, this helps prioritize budget allocation to regions with the highest historical sales performance. For product managers and marketers, it informs which locations are more responsive to current offerings.
-
-🛍️ Graph 2: Number of Previous Purchases by Location
-This chart visualizes locations with the most frequent returning shoppers.
-
-Business Insight: A high number of previous purchases indicates strong brand loyalty and engagement — even if the total purchase amount is moderate. These customers are likely to respond well to promotional incentives tied to in-store experiences.
-
-Strategic Value: Marketing teams can tailor store launch campaigns to loyal customer bases in these locations, boosting foot traffic. Data analysts and product managers can explore if specific product categories or promotions drove repeated purchases in these areas.
 
 ## Other requirements
 
