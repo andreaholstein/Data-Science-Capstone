@@ -15,7 +15,6 @@
 
 - [Shop Customer Dataset from Kaggle](https://www.kaggle.com/datasets/datascientistanna/customers-dataset)
 
-
 ## Challenges on the Horizon
 
 - We feel like we can already assume who the target demographic of our brand is - our challenge is to perform our analysis agnostic of that assumption to see if our hypothesis aligns with our conclusion.
@@ -38,46 +37,47 @@
 
 This project uses the following Python libraries:
 
-\*NumPy: For efficient numerical computations and array/matrix operations.
+- NumPy: For efficient numerical computations and array/matrix operations.
 
-\*Pandas: For data cleaning, transformation, and insightful analysis of structured datasets.
+- Pandas: For data cleaning, transformation, and insightful analysis of structured datasets.
 
-\*Matplotlib.pyplot: For creating static visualizations like line charts, bar graphs, and scatter plots.
+- Matplotlib.pyplot: For creating static visualizations like line charts, bar graphs, and scatter plots.
 
-\*Seaborn: For enhancing matplotlib plots with advanced statistical graphics and improved aesthetics.
+- Seaborn: For enhancing matplotlib plots with advanced statistical graphics and improved aesthetics.
 
-\*SciPy: For advanced scientific computing, including optimization, statistics, and signal processing.
+- SciPy: For advanced scientific computing, including optimization, statistics, and signal processing.
 
-\*Scikit-learn machine learning utilities (used for resampling, e.g., class balancing)
+- Scikit-learn machine learning utilities (used for resampling, e.g., class balancing)
 
-\*Plotly Express (import plotly.express as px) — interactive visualizations
+- Plotly Express (import plotly.express as px) — interactive visualizations
 
 Additionally, we used Jupyter notebooks to run all the code, and our dataset is--as mentioned above--from Kaggle.
 
 ### Methodology:
 
 To evaluate potential store locations and customer behavior patterns, the following multi-step methodology was applied:
-1- Data Preprocessing & Cleaning
-*Loaded and cleaned the customer dataset using Pandas.
-*Handled missing values, standardized column names, and transformed categorical features where necessary.
 
-2- Exploratory Data Analysis (EDA)
-*Used Seaborn, Matplotlib, and Plotly Express to explore customer distribution by age, gender, location, and purchasing behavior.
-*Identified key metrics such as total spending, repeat purchases, and product category trends across different regions.
+1. Data Preprocessing & Cleaning
+- Loaded and cleaned the customer dataset using Pandas.
+- Handled missing values, standardized column names, and transformed categorical features where necessary.
 
-3-Dealing with Class Imbalance
-\*Applied resampling techniques to balance customer classes when modeling or analyzing groups
+2. Exploratory Data Analysis (EDA)
+- Used Seaborn, Matplotlib, and Plotly Express to explore customer distribution by age, gender, location, and purchasing behavior.
+- Identified key metrics such as total spending, repeat purchases, and product category trends across different regions.
 
-4- Visualization Dashboards
-*Bar Charts – For comparing category-level totals (e.g., product categories, locations).
-*Heatmaps – For visualizing customer concentration across locations
-*Count Plots – To show distribution of customers by gender and other discrete features
-*Pie Charts – Used to represent proportional data such as the total purchase distribution by product category.
-*Area Plots – Included to track cumulative or continuous trends over categories.
-*Scatter Plots – For bubble charts showing relationships between customer count, repeat purchases, and total spend.
+3. Dealing with Class Imbalance
+- Applied resampling techniques to balance customer classes when modeling or analyzing groups
 
-5- Geographic Analysis
-\*Heatmaps and bubble charts use to represent store location potential and customer behavior density.
+4. Visualization Dashboards
+- Bar Charts – For comparing category-level totals (e.g., product categories, locations).
+- Heatmaps – For visualizing customer concentration across locations
+- Count Plots – To show distribution of customers by gender and other discrete features
+- Pie Charts – Used to represent proportional data such as the total purchase distribution by product category.
+- Area Plots – Included to track cumulative or continuous trends over categories.
+- Scatter Plots – For bubble charts showing relationships between customer count, repeat purchases, and total spend.
+
+5. Geographic Analysis
+- Heatmaps and bubble charts use to represent store location potential and customer behavior density.
 
 ### Review of Raw Data and Exploratory Data Analysis:
 
@@ -103,7 +103,7 @@ To evaluate potential store locations and customer behavior patterns, the follow
 - What items are sold?
   25 unique items are sold, including Blouse, Sweater, Jeans, Handbag, etc.
 
-  ### Assumptions, Limiting Conditions, Data Risks:
+### Assumptions, Limiting Conditions, Data Risks:
 
 The dataset assumes representative sampling of customer purchases but may contain biases due to uneven gender distribution or sparse location data, potentially skewing demographic insights. To address sampling bias, compare dataset demographics (e.g., age, gender) to U.S. census data; sparse location data should be handled by grouping low-sample regions or imputing missing values cautiously to avoid distorting geographic trends. Data risks include potential inconsistencies in categorical entries (e.g., typos in Color or Item Purchased) and incomplete records, which could affect analysis reliability.
 
@@ -200,12 +200,5 @@ Strategic Value: Marketing teams can tailor store launch campaigns to loyal cust
 ## Other requirements
 
 ### Team Videos:
-
--
-
-### Team Work Structure:
-
-- ## Worked together on:
-- ## Worked dependently on:
 
 ### Reproducibility:
