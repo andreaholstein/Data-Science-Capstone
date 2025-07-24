@@ -1,25 +1,48 @@
 # DSI Group Project Team 3
 
-## Case Study
+## 📦 Case Study
 
-- A major clothing brand, popular with athletes and young women, is looking to open a new brick-and-mortar store, and hopes to launch a new store promotion. The brand needs to identify the optimal geographical location to open a new store based on where their target shopper demographic is located, and tailoring their promotion to incentivize new and existing shoppers to visit the new store and drive sales conversions.
-- Our stakeholders are: the brand's marketing and sales departments, product managers & data analysts, the finance team and senior leadership (operations).
-- The outcome of our analysis will help inform the brand's marketing strategies, and product offerings in certain jurisdictions. It will also inform annual budgeting. This project will offer additional insight into customer shopping behaviours, and inform strategies to retain and acquire customers.
-- Our project will demonstrate a keen understanding of how to identify business opportunities and apply data-driven decision-making in the retail & commerce sector.
+A major clothing brand — popular among athletes and young women — is planning to open a new brick-and-mortar store and launch a store-specific promotion. To maximize success, the brand seeks to:
 
-## Business Motivation
+- Identify the **optimal geographical location** for the new store, based on customer demographics and purchasing behavior  
+- Design a **targeted promotion** to attract both new and existing shoppers and drive **sales conversions**
 
-- Analyzing customer demographics, we will identify the optimal location for a new store, and tailor their launch promotion to target new and existing customers based on those criteria.
+### 🎯 Stakeholders
+
+- **Marketing & Sales teams** — to tailor promotions and campaigns  
+- **Product Managers & Data Analysts** — to refine regional product strategies  
+- **Finance Team** — to support budgeting and ROI forecasting  
+- **Senior Leadership (Operations)** — to inform expansion and investment decisions
+
+### 💡 Project Impact
+
+Our analysis aims to:
+
+- Guide **marketing strategies** and regional **product offerings**  
+- Support **annual budgeting** and financial planning  
+- Provide deeper insight into **customer shopping behavior**  
+- Inform tactics to **retain existing customers** and **acquire new ones**
+
+This project showcases the power of **data-driven decision-making** in the retail and commerce sector, with a focus on identifying actionable business opportunities through rigorous analysis.
+
+
+## 💼 Business Motivation
+
+By analyzing customer demographics and purchase behaviors, this project aims to:
+
+- Identify the **optimal location** for a new physical store
+- Design a **tailored launch promotion** that effectively targets both **new and existing customers**
+- Align promotional strategies with the brand’s core demographic to **maximize foot traffic** and **drive sales conversions**
 
 ## The Dataset
 
 - [Shop Customer Dataset from Kaggle](https://www.kaggle.com/datasets/datascientistanna/customers-dataset)
 
-## Challenges on the Horizon
+## ⚠️ Challenges on the Horizon
 
-- We feel like we can already assume who the target demographic of our brand is - our challenge is to perform our analysis agnostic of that assumption to see if our hypothesis aligns with our conclusion.
-- Inital dataset was not suitable for our business problem. We sourced another dataset from Kaggle.
-- The data may be biased.
+- While we may have initial assumptions about our brand’s target demographic, a key challenge is to conduct our analysis **objectively** to validate (or challenge) those assumptions with data.
+- The **initial dataset** provided was not aligned with our business goals, prompting us to source a more suitable dataset from **Kaggle**.
+- The data may carry **inherent biases** 
 
 ## The Team:
 
@@ -85,14 +108,19 @@ To evaluate potential store locations and customer behavior patterns, the follow
 
 - Heatmaps and bubble charts use to represent store location potential and customer behavior density.
 
-### Review of Raw Data and Exploratory Data Analysis:
+## Review of Raw Data and Exploratory Data Analysis
 
-- Understanding the Raw Data
-  The dataset contains 18 features: Unnamed:0 (int64), Customer ID (int64), Age (int64), Gender (object), Item Purchased (object), Category (object), Purchase Amount (USD) (int64), Location (object), Color (object), Season (object), Review Rating (float64), Subscription Status (object), Shipping Type (object), Discount Applied (object), Promo Code Used (object), Previous Purchases (int64), Payment Method (object), and Frequency of Purchases (object). This mix of numerical and categorical data provides insights into customer demographics, purchasing behavior, and preferences.
-- Understanding the Features
+- **Understanding the Raw Data**  
+  The dataset contains 18 features:  
+  *Unnamed:0* (int64), *Customer ID* (int64), *Age* (int64), *Gender* (object), *Item Purchased* (object), *Category* (object), *Purchase Amount (USD)* (int64), *Location* (object), *Color* (object), *Season* (object), *Review Rating* (float64), *Subscription Status* (object), *Shipping Type* (object), *Discount Applied* (object), *Promo Code Used* (object), *Previous Purchases* (int64), *Payment Method* (object), and *Frequency of Purchases* (object).  
+  This mix of numerical and categorical data provides insights into customer demographics, purchasing behavior, and preferences.
+
+- **Understanding the Features**  
   Features capture customer details (e.g., Age, Gender, Location), purchase specifics (e.g., Item Purchased, Category, Purchase Amount), and engagement metrics (e.g., Subscription Status, Previous Purchases). Categorical features like Color, Season, and Shipping Type allow segmentation, while numerical features like Review Rating and Purchase Amount enable quantitative analysis of trends and correlations.
-- Correlation between features
+
+- **Correlation between Features**  
   Purchase Amount (USD) shows weak correlations with Age and Review Rating, suggesting no strong linear relationship. Subscription Status and Promo Code Used are highly correlated, indicating subscribers frequently use discounts, which could influence spending patterns.
+
 
 ### Conclusion of reviewing the raw data and EDA:
 
@@ -130,97 +158,192 @@ All-in-all, our dataset was very clean, and no data needed to be dropped or impu
 
 We identified a class imbalance issue in our dataset, where the data was skewed heavily toward male values (2652 males vs. 1248 females). Concerned that this would potentially skewing insights into purchasing behavior, we balanced this by oversampling the female class, as implemented in the updated script, balances the dataset, improving model fairness and ensuring equitable representation in analyses.
 
-### Analytics:
+---
 
-- age groups (filtering) (Average Purchase Amount by Age Group and Gender)
-  *This chart displays the distribution of customers across different age groups, categorized into defined age bins (e.g., 20s, 30s, etc.). The bars represent the number of customers in each group, with quantity labels added for clarity.
-  *The 20s and 30s age groups have the highest concentration of customers, indicating that younger adults form the core of our customer base.
-  *The number of customers gradually declines with age, with fewer customers aged 60 and above.
-  *The <20 age group is relatively small, suggesting limited engagement from teenagers.
-  \*The majority of our customers fall between the ages of 20 to 39, making this a key demographic for campaigns, product design, and customer loyalty programs.
-- gender and purchase amount (Average Purchase Amount by Gender) (Top 30 Locations)
-  *This bar chart illustrates the average amount spent per purchase, segmented by both age group and gender. The age groups are evenly categorized by decades (e.g., 20s, 30s, 40s), and the comparison between genders provides insights into customer value across different demographics.
-  *Customers in their 30s and 40s tend to spend the most on average, regardless of gender.
-  *In many age groups, female customers spend slightly more on average than male customers.
-  *After age 60, average purchase amounts decline for both genders, suggesting reduced spending or more conservative purchasing habits in older customers.
-  \*Alaska, North Dakota, Pennsylvania, Arkansas, Michigan; These states show the highest average purchase amounts, especially from female customers.
-  -Premium targeting: Alaska and Pennsylvania are promising regions for premium offerings.
-  -Female-focused marketing: Consider campaigns that target female demographics in high-spending states.
+## 🔍 Analytics
 
-  We began by evaluating product category performance by grouping all customer purchases and summing total purchase amounts. A pie chart was used to visualize and show that Clothing is the highest revenue generating category.
-
-Next, we identified the top ten states by total purchase value. Montana had the highest total purchase revenue. However, Alabama had the highest number of previous purchases and the highest average spend per customer, indicating a more loyal and engaged customer base.
-
-We then analyzed purchasing behavior within both Montana and Alabama, focusing on the Clothing category, and identified the most frequently purchased items. This can help guide targeted promotions, inform inventory planning, and influence store setup.
-
-- purchase amount by location
-- previous purchases by location
-
-Visualizing Top 10 Locations by Purchase Amount and Previous Purchases
-
-To help determine the optimal location for the brand’s new store and identify the store launch promotion strategy, we created two key visualizations:
-
-Top 10 Locations by Total Purchase 
-
-Top 10 Locations by Number of Previous Purchases
-
-- Why Top 10?
-We focused on the Top 10 performing locations instead of visualizing all locations for the following reasons:
-
-1. Clarity: Presenting all geographic locations would lead to a cluttered and less interpretable visualization. By narrowing down to the top 10, we spotlight the areas with the most promising business potential.
-
-2. Decision-Making Efficiency: Our key stakeholders — including the marketing, sales, finance, and senior leadership teams — need actionable insights quickly. This targeted approach highlights only the highest-performing locations, which are most relevant for high-impact business decisions like store placement and promotion allocation.
-
-3. ROI-Oriented Planning: Focusing on top-performing areas ensures that marketing efforts and capital investments are directed toward locations with proven customer engagement and purchasing power.
+We conducted a multi-faceted analysis to uncover purchasing behavior trends across customer demographics, locations, and categories. Below is a summary of key findings and their strategic implications:
 
 ---
 
-Graph 1: Total Purchase Amount by Location
-This bar chart shows which geographic locations generated the highest overall purchase revenue.
+### 1. 📊 Age Group & Gender Insights
 
-Business Insight: Locations with the highest purchase totals are likely to have a strong base of high-value customers. These areas may represent untapped potential for upselling through targeted promotions, or be ideal for locating a new store where customers already spend heavily online.
+**(Average Purchase Amount by Age Group and Gender)**
 
-Strategic Value: For the finance team and senior leadership, this helps prioritize budget allocation to regions with the highest historical sales performance. For product managers and marketers, it informs which locations are more responsive to current offerings.
+* Customers in their **20s and 30s** represent the highest concentration, forming our **core demographic**.
+* Average purchase value peaks in the **30s and 40s** age groups.
+* **Female customers** consistently spend slightly more than males across most age groups.
+* Spending drops significantly after age 60.
+
+**Strategic takeaway:**
+
+* Prioritize product design and loyalty programs for customers aged **20–39**.
+* Target high-spending **female** audiences for premium marketing.
 
 ---
 
-Graph 2: Number of Previous Purchases by Location
+### 2. 🌍 Geographic Spending Patterns
 
-This chart visualizes locations with the most frequent returning shoppers.
+**(Top 30 Locations – Average Spend by State and Gender)**
 
-Business Insight: A high number of previous purchases indicates strong brand loyalty and engagement — even if the total purchase amount is moderate. These customers are likely to respond well to promotional incentives tied to in-store experiences.
+* States like **Alaska, North Dakota, Pennsylvania, Arkansas, and Michigan** show the highest average spending.
+* Female customers in these states contribute significantly to purchase totals.
 
-Strategic Value: Marketing teams can tailor store launch campaigns to loyal customer bases in these locations, boosting foot traffic. Data analysts and product managers can explore if specific product categories or promotions drove repeated purchases in these areas.
+**Strategic takeaway:**
 
-# Results
+* Focus **premium product campaigns** in Alaska and Pennsylvania.
+* Launch **female-centric promotions** in high-spend regions.
 
-We found that while Montana generated the most revenue overall, Alabama customers made more repeat purchases and spent more on average. Clothing significantly outperformed Accessories, Footwear, and Outerwear in total sales. In Montana, the top sellers were socks, pants, and jeans. In Alabama, pants, shirts, skirts, and jeans were the most popular.
+---
 
-## 🧠Final Conclusions:
+### 3. 🗂 Category Performance
 
-- The most attractive locations for opening a new store are those with a high number of customers, strong loyalty, and large total spending.
-- These are visualized as large, dark bubbles in the upper-right of the plot.
-- Locations in the top-right quadrant with large, dark bubbles are strong candidates for store expansion.
+**(Purchase Amount by Category)**
 
-- Montana led in total revenue, while Alabama stood out for customer loyalty and higher average spend per purchase. These highlight multiple factors to consider when evaluating potential store locations. Across both states, high-performing clothing items included pants and jeans, with additional demand in Alabama for shirts and skirts, and in Montana for socks. These patterns can inform future promotion strategies and inventory to stock.
+* A pie chart analysis revealed **Clothing** as the top revenue-generating category.
+* This category should be a **stocking priority** and central to future campaigns.
+* Product category performance also varies by location, aiding localized inventory planning.
 
-These regions combine:large and loyal customer base High total spending
+---
 
-- Locations with a large customer base but low repeat purchases may benefit from targeted loyalty programs or promotions before committing to physical expansion.
-- Locations with high repeat purchase rates but smaller customer counts suggest untapped potential — perhaps a niche market or underserved area worth exploring with a smaller-format store or digital presence.
-- Montana stands out due to maxed-out total purchase and customer volume, even with moderate loyalty.
-- Illinois is a well-balanced candidate with strong scores across the board.
-- California has the largest customer base, but relatively lower repeat purchases, so may need loyalty incentives.
+### 4. 📌 Top Performing Locations
 
-From our analysis, we identified:
+**(Total Purchase Amount & Number of Previous Purchases)**
 
-- The top 10 locations by **total purchase amount**, which highlights where the **most revenue** is coming from.
-- The top 10 locations by **number of previous purchases**, indicating where our **most engaged or frequent customers** are located.
+We visualized the **Top 10 Locations** using two key metrics:
 
-By comparing these two lists, we can better understand **which locations have both high value and high frequency**, and tailor marketing or customer loyalty efforts accordingly.
+#### ➤ Graph 1: Total Purchase Amount by Location
 
-These insights are critical for strategic decisions in targeted advertising, customer retention programs, and inventory planning across locations.
+* Highlights the **highest-grossing regions**.
 
+#### ➤ Graph 2: Number of Previous Purchases by Location
+
+* Measures **customer loyalty and engagement**.
+
+**Why Top 10?**
+
+* ✅ **Clarity**: Avoids clutter from visualizing all regions.
+* ✅ **Efficiency**: Speeds up stakeholder decision-making.
+* ✅ **ROI Focus**: Concentrates on regions with strongest returns.
+
+**Strategic Value:**
+
+* Guides **store placement** and **inventory prioritization**.
+* Identifies **high-value and loyal customers** for targeted marketing.
+
+---
+
+### 5. 📦 Spending Behavior in Key States
+
+**(Montana & Alabama Deep Dive)**
+
+* **Montana**: Highest total purchase revenue.
+* **Alabama**: Highest number of previous purchases and average spend per customer.
+* Clothing was the top category in both states.
+
+**Strategic takeaway:**
+
+* **Montana** is a high-value market.
+* **Alabama** indicates strong customer loyalty—ideal for retention programs.
+
+---
+
+### 6. 🧠 Customer Density vs. Repeat Purchases
+
+**(Bubble Chart: Age-Gender-Location Analysis)**
+
+A bubble chart combined three metrics: **customer count**, **repeat purchases**, and **total spend**.
+
+Key insights:
+
+* **Montana**: Top revenue and customer count, moderate loyalty.
+* **Illinois**: Balanced across all metrics – strong expansion candidate.
+* **California**: Large customer base but low loyalty – good testing ground for loyalty programs.
+
+**Strategic takeaway:**
+
+* Prioritize store placement in areas with **high density, loyalty, and spend**.
+* Deploy targeted promotions in regions with high potential but low engagement.
+
+---
+
+Certainly! Here's a **tidied-up and polished version** of your **Results** and **Final Conclusions** section, ready to paste into your `README.md` file:
+
+---
+
+## 📊 Results
+
+We found that while **Montana** generated the most revenue overall, **Alabama** customers made more repeat purchases and had a higher average spend. In terms of product categories, **Clothing** significantly outperformed **Accessories**, **Footwear**, and **Outerwear** in total sales.
+
+* In **Montana**, the top sellers were: socks, pants, and jeans.
+* In **Alabama**, the most popular items included: pants, shirts, skirts, and jeans.
+
+---
+
+## 🧠 Final Conclusions
+
+* The most attractive store locations combine:
+
+  * A **large customer base**
+  * **High loyalty** (repeat purchases)
+  * **Strong total spending**
+
+* These locations appear as **large, dark bubbles in the upper-right** quadrant of the scatter plot — ideal candidates for expansion.
+
+### Key Insights:
+
+* **Montana** leads in **total revenue** but has moderate repeat purchases.
+* **Alabama** has **high loyalty** and **above-average spending per purchase**, suggesting strong customer relationships.
+* **Illinois** shows a **well-balanced profile**, making it a solid candidate for store growth.
+* **California** has the **largest customer base**, but lower loyalty — making it suitable for **targeted loyalty programs** before expansion.
+* Locations with:
+
+  * **High customers but low loyalty** = opportunity for **promotions or retention strategies**.
+  * **High loyalty but fewer customers** = potential for **niche or digital-first store formats**.
+
+### Location-Specific Observations:
+
+* **Montana**: High volume + maxed-out revenue = strong expansion target.
+* **Alabama**: Loyal, high-spending base = potential for deeper customer engagement.
+* **California**: Volume-rich but loyalty-lagging = needs retention focus.
+
+### Location Analysis Summary:
+
+We identified:
+
+* **Top 10 locations by Total Purchase Amount** → Where the most **revenue** comes from.
+* **Top 10 locations by Number of Previous Purchases** → Where our most **frequent and engaged** customers are.
+
+By comparing these two metrics, we gain insight into:
+
+* Which locations offer **high value and frequency**,
+* How to tailor **inventory**, **marketing**, and **customer loyalty** strategies.
+
+These insights support **strategic decisions** around:
+
+* Expansion opportunities,
+* Targeted advertising,
+* Inventory planning, and
+* Loyalty program optimization across geographic areas.
+
+### 🧭 Strategic Recommendations:
+
+* 🏬 Focus expansion efforts on locations with high spending and moderate-to-high loyalty
+
+* 💳 Launch retention programs in high-traffic but low-loyalty regions like California
+
+* 📦 Align inventory and product mixes with region-specific preferences (e.g., socks in Montana)
+
+* 📣 Use targeted advertising based on spending patterns and loyalty clusters
+
+* 🔁 Prioritize repeat customer growth over one-time volume in saturated markets
+
+### 📌 Bottom Line:
+
+* Montana, Alabama, and Illinois represent the strongest candidates for store expansion.
+* California and similar markets should be prioritized for loyalty-building campaigns before scaling physical presence.
+
+---
 
 ## Other requirements
 
