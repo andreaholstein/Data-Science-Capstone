@@ -1,19 +1,25 @@
-#Title
+# DSI Group Project Team 3
 
-#Introduction - done
+## Case Study
 
-#Business Case - Done
+- A major clothing brand, popular with athletes and young women, is looking to open a new brick-and-mortar store, and hopes to launch a new store promotion. The brand needs to identify the optimal geographical location to open a new store based on where their target shopper demographic is located, and tailoring their promotion to incentivize new and existing shoppers to visit the new store and drive sales conversions.
+- Our stakeholders are: the brand's marketing and sales departments, product managers & data analysts, the finance team and senior leadership (operations).
+- The outcome of our analysis will help inform the brand's marketing strategies, and product offerings in certain jurisdictions. It will also inform annual budgeting. This project will offer additional insight into customer shopping behaviours, and inform strategies to retain and acquire customers.
+- Our project will demonstrate a keen understanding of how to identify business opportunities and apply data-driven decision-making in the retail & commerce sector.
 
-#Dataset Used - Done (Update)
+## Business Motivation
 
-#Project Overview (Table of Contents)
+- Analyzing customer demographics, we will identify the optimal location for a new store, and tailor their launch promotion to target new and existing customers based on those criteria.
 
-Requirements: (All)
+## Dataset Used
 
-- This project uses the following Python libraries
-- (Adi's Comments)Tech stack: List the tools, languages, and frameworks (Python, Jupyter, mapping libraries, dashboard platform) along with what you’ll deliver (heatmaps, interactive map, slide deck) and a roadmap of the 5 day sprint.
+- [Shop Customer Data Dataset from Kaggle](https://www.kaggle.com/datasets/datascientistanna/customers-dataset)
 
-This project uses the following Python libraries
+## Project Overview (Table of Contents)
+
+### Requirements:
+
+This project uses the following Python libraries:
 
 \*NumPy: For efficient numerical computations and array/matrix operations.
 
@@ -29,7 +35,9 @@ This project uses the following Python libraries
 
 \*Plotly Express (import plotly.express as px) — interactive visualizations
 
-Methodology (All)
+Additionally, we used Jupyter notebooks to run all the code, and our dataset is--as mentioned above--from Kaggle.
+
+### Methodology:
 
 - (Adi's Comments) Methodology: Outline the specific steps you’ll take—e.g. geocoding customer addresses, calculating catchment areas, scoring locations by foot traffic or demographic fit—and any algorithms or other libraries/datasets you will use.
 
@@ -56,7 +64,7 @@ To evaluate potential store locations and customer behavior patterns, the follow
 5- Geographic Analysis
 \*Heatmaps and bubble charts use to represent store location potential and customer behavior density.
 
-Review of Raw Data and Exploratory Data Analysis (Joanne)
+### Review of Raw Data and Exploratory Data Analysis:
 
 - Understanding the Raw Data
   The dataset contains 18 features: Unnamed:0 (int64), Customer ID (int64), Age (int64), Gender (object), Item Purchased (object), Category (object), Purchase Amount (USD) (int64), Location (object), Color (object), Season (object), Review Rating (float64), Subscription Status (object), Shipping Type (object), Discount Applied (object), Promo Code Used (object), Previous Purchases (int64), Payment Method (object), and Frequency of Purchases (object). This mix of numerical and categorical data provides insights into customer demographics, purchasing behavior, and preferences.
@@ -65,7 +73,7 @@ Review of Raw Data and Exploratory Data Analysis (Joanne)
 - Correlation between features
   Purchase Amount (USD) shows weak correlations with Age and Review Rating, suggesting no strong linear relationship. Subscription Status and Promo Code Used are highly correlated, indicating subscribers frequently use discounts, which could influence spending patterns.
 
-Conclusion of reviewing the raw data and EDA (Joanne)
+### Conclusion of reviewing the raw data and EDA:
 
 - How many states are there?
   There are 50 unique states in the dataset
@@ -80,25 +88,29 @@ Conclusion of reviewing the raw data and EDA (Joanne)
 - What items are sold?
   25 unique items are sold, including Blouse, Sweater, Jeans, Handbag, etc.
 
-Assumptions, Limiting Conditions, Data Risks (Joanna)
+### Assumptions, Limiting Conditions, Data Risks:
+
 (Adi's Comments) Data risks & assumptions: You note bias and initial assumptions—consider specifying how you’ll test for sampling bias (e.g., comparing dataset demographics to census data) and how you’ll handle missing or sparse location data.
 The dataset assumes representative sampling of customer purchases but may contain biases due to uneven gender distribution or sparse location data, potentially skewing demographic insights. To address sampling bias, compare dataset demographics (e.g., age, gender) to U.S. census data; sparse location data should be handled by grouping low-sample regions or imputing missing values cautiously to avoid distorting geographic trends. Data risks include potential inconsistencies in categorical entries (e.g., typos in Color or Item Purchased) and incomplete records, which could affect analysis reliability.
 
-Data Cleaning (Andrea and Joanne )
+- Our inital dataset was not suitable for our business problem. This resulted in us sourcing another dataset from Kaggle.
+- At the beginning, we believed we could assume who the target demographic of our brand is - our challenge was to perform our analysis agnostic of that assumption to see if our hypothesis aligns with our conclusion.
+- We had concerns that the data may be biased: we did in fact identify a considerable class imbalance between the sexes of the respondents in our dataset which we balanced, and performed our analyses on this updated dataset.
+- Some of our initial data analysis proved redundant as we learned more about the process. For instance, we initially thought we might need to create smaller samples to perform our analysis on, thinking our dataset might be too large and performance-demanding. However, that proved to not be necessary, and so we performed our analyses on the full dataset.
 
-- Column titles
-- Check for nulls
-- Check data types
-- Class imbalance (Joanne)
-  The dataset exhibits a significant gender imbalance, with 2652 males and 1248 females, as observed in the EDA. The class_imbalance.ipynb script attempts to address this by oversampling the minority class (Female) to match the majority class (Male), creating a balanced dataset with equal gender representation.
+### Data Cleaning:
 
-Data Cleaning Conclusions (Andrea and Joanne)
+For data cleaning, we first performed validation on the dataset to check for missing data, nulls, or invalid data types. We also ran checks to check for typos in the string data, and renamed the column headers in our dataframe for more legibility.
 
-- Impact of the class imbalance
-  The gender imbalance (2652 males vs. 1248 females) may bias predictive models toward male customers, potentially skewing insights into purchasing behavior. Oversampling the female class, as implemented in the updated script, balances the dataset, improving model fairness and ensuring equitable representation in analyses.
-- Dropping any data?
+The dataset exhibits a significant gender imbalance, with 2652 males and 1248 females, as observed in the EDA. The class_imbalance.ipynb script attempts to address this by oversampling the minority class (Female) to match the majority class (Male), creating a balanced dataset with equal gender representation.
 
-Analytics (Dianne, Ayshe, Mirian, Crystal)
+### Data Cleaning Conclusions:
+
+All-in-all, our dataset was very clean, and no data needed to be dropped or imputed to correct for missing information.
+
+We identified a class imbalance issue in our dataset, where the data was skewed heavily toward male values (2652 males vs. 1248 females). Concerned that this would potentially skewing insights into purchasing behavior, we balanced this by oversampling the female class, as implemented in the updated script, balances the dataset, improving model fairness and ensuring equitable representation in analyses.
+
+### Analytics:
 
 - age groups (filtering) (Average Purchase Amount by Age Group and Gender)
   *This chart displays the distribution of customers across different age groups, categorized into defined age bins (e.g., 20s, 30s, etc.). The bars represent the number of customers in each group, with quantity labels added for clarity.
@@ -120,39 +132,31 @@ Analytics (Dianne, Ayshe, Mirian, Crystal)
 - category by purchase amount (insight into high-purchase categories to prioritize product inventory)
 - category by purchase amount by location - inform what promotions to run
 
-Final Conclusions (All)
+## Final Conclusions:
 
 - (Adi's Comments) Evaluation criteria: Define how you’ll judge “optimal” location—will you use distance buffers, drive-time analysis, or demographic thresholds? Mention your metrics or scoring rubric.
 
-  #The most attractive locations for opening a new store are those with a high number of customers, strong loyalty, and large total spending.
-  #These are visualized as large, dark bubbles in the upper-right of the plot.
-  #Locations in the top-right quadrant with large, dark bubbles are strong candidates for store expansion.
+- The most attractive locations for opening a new store are those with a high number of customers, strong loyalty, and large total spending.
+- These are visualized as large, dark bubbles in the upper-right of the plot.
+- Locations in the top-right quadrant with large, dark bubbles are strong candidates for store expansion.
 
-  # These regions combine:large and loyal customer base High total spending
+### These regions combine:large and loyal customer base High total spending
 
-  #Locations with a large customer base but low repeat purchases may benefit from targeted loyalty programs or promotions before committing to physical expansion.
-  #Locations with high repeat purchase rates but smaller customer counts suggest untapped potential — perhaps a niche market or underserved area worth exploring with a smaller-format store or digital presence.
-  #Montana stands out due to maxed-out total purchase and customer volume, even with moderate loyalty.
-  #Illinois is a well-balanced candidate with strong scores across the board.
-  #California has the largest customer base, but relatively lower repeat purchases, so may need loyalty incentives.
+- Locations with a large customer base but low repeat purchases may benefit from targeted loyalty programs or promotions before committing to physical expansion.
+- Locations with high repeat purchase rates but smaller customer counts suggest untapped potential — perhaps a niche market or underserved area worth exploring with a smaller-format store or digital presence.
+- Montana stands out due to maxed-out total purchase and customer volume, even with moderate loyalty.
+- Illinois is a well-balanced candidate with strong scores across the board.
+- California has the largest customer base, but relatively lower repeat purchases, so may need loyalty incentives.
 
-Other requirements
+## Other requirements
 
-Team Videos (All)
+### Team Videos:
 
 -
 
-Team Work Structure (All)
+### Team Work Structure:
 
-- Worked together on:
-  -
-- Worked dependently on:
-  -
+- ## Worked together on:
+- ## Worked dependently on:
 
-Reproducibility (All)
-
-- Project includes one fully reproducible feature
-- Reproduction instructions are clear and include
-  - Data access
-  - Software/environment dependencies
-  - File structure
+### Reproducibility:
