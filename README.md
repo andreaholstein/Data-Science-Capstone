@@ -387,6 +387,23 @@ These insights support **strategic decisions** around:
 - **What strengths did you bring to the team environment?**  
   I was available for all meetings as my schedule allowed it. Despite not having met in person, I tried to keep the work friendly and professional.
 
+**🌟Mirian's Reflection**
+
+- **What did you learn?**  
+  I learned how to create heatmaps for business analysis and how to interpret correlation data to guide decision-making. I also improved my skills in data visualization using Python libraries like seaborn and matplotlib.
+
+- **What challenges did you face?** 
+  Initially, I found it challenging to grasp the project's main objective. Another technical challenge was converting categorical data (like purchase frequency) into a numeric format for correlation analysis.
+
+- **How did you overcome those challenges?** 
+  Through active participation in team meetings, the project goals became clear, and I understood exactly what we needed to deliver. For the technical challenge, I researched data transformation techniques and created mapping functions to convert text values to numbers.
+
+- **If you had more time, what would you add?** 
+  I would create interactive heatmaps and add geographic mapping to better visualize store location recommendations. I would also explore additional customer segmentation analysis.
+
+- **What strengths did you bring to the team environment?** 
+  My background helped me understand how to apply heatmaps for business analysis, allowing me to make contributions. I also brought strong GitHub skills, helping with code reviews and resolving merge conflicts to ensure smooth collaboration.
+
 
 ### Reproducibility
 
