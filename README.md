@@ -4,23 +4,23 @@
 
 A major clothing brand — popular among athletes and young women — is planning to open a new brick-and-mortar store and launch a store-specific promotion. To maximize success, the brand seeks to:
 
-- Identify the **optimal geographical location** for the new store, based on customer demographics and purchasing behavior  
+- Identify the **optimal geographical location** for the new store, based on customer demographics and purchasing behavior
 - Design a **targeted promotion** to attract both new and existing shoppers and drive **sales conversions**
 
 ### 🎯 Stakeholders
 
-- **Marketing & Sales teams** — to tailor promotions and campaigns  
-- **Product Managers & Data Analysts** — to refine regional product strategies  
-- **Finance Team** — to support budgeting and ROI forecasting  
+- **Marketing & Sales teams** — to tailor promotions and campaigns
+- **Product Managers & Data Analysts** — to refine regional product strategies
+- **Finance Team** — to support budgeting and ROI forecasting
 - **Senior Leadership (Operations)** — to inform expansion and investment decisions
 
 ### 💡 Project Impact
 
 Our analysis aims to:
 
-- Guide **marketing strategies** and regional **product offerings**  
-- Support **annual budgeting** and financial planning  
-- Provide deeper insight into **customer shopping behavior**  
+- Guide **marketing strategies** and regional **product offerings**
+- Support **annual budgeting** and financial planning
+- Provide deeper insight into **customer shopping behavior**
 - Inform tactics to **retain existing customers** and **acquire new ones**
 
 This project showcases the power of **data-driven decision-making** in the retail and commerce sector, with a focus on identifying actionable business opportunities through rigorous analysis.
@@ -41,7 +41,7 @@ By analyzing customer demographics and purchase behaviors, this project aims to:
 
 - While we may have initial assumptions about our brand’s target demographic, a key challenge is to conduct our analysis **objectively** to validate (or challenge) those assumptions with data.
 - The **initial dataset** provided was not aligned with our business goals, prompting us to source a more suitable dataset from **Kaggle**.
-- The data may carry **inherent biases** 
+- The data may carry **inherent biases**
 
 ## 👩‍💼The Team:
 
@@ -107,7 +107,7 @@ To evaluate potential store locations and customer behavior patterns, the follow
 
 - **Understanding the Raw Data**  
   The dataset contains 18 features:  
-  *Unnamed:0* (int64), *Customer ID* (int64), *Age* (int64), *Gender* (object), *Item Purchased* (object), *Category* (object), *Purchase Amount (USD)* (int64), *Location* (object), *Color* (object), *Season* (object), *Review Rating* (float64), *Subscription Status* (object), *Shipping Type* (object), *Discount Applied* (object), *Promo Code Used* (object), *Previous Purchases* (int64), *Payment Method* (object), and *Frequency of Purchases* (object).  
+  _Unnamed:0_ (int64), _Customer ID_ (int64), _Age_ (int64), _Gender_ (object), _Item Purchased_ (object), _Category_ (object), _Purchase Amount (USD)_ (int64), _Location_ (object), _Color_ (object), _Season_ (object), _Review Rating_ (float64), _Subscription Status_ (object), _Shipping Type_ (object), _Discount Applied_ (object), _Promo Code Used_ (object), _Previous Purchases_ (int64), _Payment Method_ (object), and _Frequency of Purchases_ (object).  
   This mix of numerical and categorical data provides insights into customer demographics, purchasing behavior, and preferences.
 
 - **Understanding the Features**  
@@ -115,7 +115,6 @@ To evaluate potential store locations and customer behavior patterns, the follow
 
 - **Correlation between Features**  
   Purchase Amount (USD) shows weak correlations with Age and Review Rating, suggesting no strong linear relationship. Subscription Status and Promo Code Used are highly correlated, indicating subscribers frequently use discounts, which could influence spending patterns.
-
 
 ### 🌟Conclusion of reviewing the raw data and EDA:
 
@@ -165,15 +164,15 @@ We conducted a multi-faceted analysis to uncover purchasing behavior trends acro
 
 **(Average Purchase Amount by Age Group and Gender)**
 
-* Customers in their **20s and 30s** represent the highest concentration, forming our **core demographic**.
-* Average purchase value peaks in the **30s and 40s** age groups.
-* **Female customers** consistently spend slightly more than males across most age groups.
-* Spending drops significantly after age 60.
+- Customers in their **20s and 30s** represent the highest concentration, forming our **core demographic**.
+- Average purchase value peaks in the **30s and 40s** age groups.
+- **Female customers** consistently spend slightly more than males across most age groups.
+- Spending drops significantly after age 60.
 
 **Strategic takeaway:**
 
-* Prioritize product design and loyalty programs for customers aged **20–39**.
-* Target high-spending **female** audiences for premium marketing.
+- Prioritize product design and loyalty programs for customers aged **20–39**.
+- Target high-spending **female** audiences for premium marketing.
 
 ---
 
@@ -181,13 +180,13 @@ We conducted a multi-faceted analysis to uncover purchasing behavior trends acro
 
 **(Top 30 Locations – Average Spend by State and Gender)**
 
-* States like **Alaska, North Dakota, Pennsylvania, Arkansas, and Michigan** show the highest average spending.
-* Female customers in these states contribute significantly to purchase totals.
+- States like **Alaska, North Dakota, Pennsylvania, Arkansas, and Michigan** show the highest average spending.
+- Female customers in these states contribute significantly to purchase totals.
 
 **Strategic takeaway:**
 
-* Focus **premium product campaigns** in Alaska and Pennsylvania.
-* Launch **female-centric promotions** in high-spend regions.
+- Focus **premium product campaigns** in Alaska and Pennsylvania.
+- Launch **female-centric promotions** in high-spend regions.
 
 ---
 
@@ -195,9 +194,9 @@ We conducted a multi-faceted analysis to uncover purchasing behavior trends acro
 
 **(Purchase Amount by Category)**
 
-* A pie chart analysis revealed **Clothing** as the top revenue-generating category.
-* This category should be a **stocking priority** and central to future campaigns.
-* Product category performance also varies by location, aiding localized inventory planning.
+- A pie chart analysis revealed **Clothing** as the top revenue-generating category.
+- This category should be a **stocking priority** and central to future campaigns.
+- Product category performance also varies by location, aiding localized inventory planning.
 
 ---
 
@@ -209,22 +208,22 @@ We visualized the **Top 10 Locations** using two key metrics:
 
 #### ➤ Graph 1: Total Purchase Amount by Location
 
-* Highlights the **highest-grossing regions**.
+- Highlights the **highest-grossing regions**.
 
 #### ➤ Graph 2: Number of Previous Purchases by Location
 
-* Measures **customer loyalty and engagement**.
+- Measures **customer loyalty and engagement**.
 
 **Why Top 10?**
 
-* ✅ **Clarity**: Avoids clutter from visualizing all regions.
-* ✅ **Efficiency**: Speeds up stakeholder decision-making.
-* ✅ **ROI Focus**: Concentrates on regions with strongest returns.
+- ✅ **Clarity**: Avoids clutter from visualizing all regions.
+- ✅ **Efficiency**: Speeds up stakeholder decision-making.
+- ✅ **ROI Focus**: Concentrates on regions with strongest returns.
 
 **Strategic Value:**
 
-* Guides **store placement** and **inventory prioritization**.
-* Identifies **high-value and loyal customers** for targeted marketing.
+- Guides **store placement** and **inventory prioritization**.
+- Identifies **high-value and loyal customers** for targeted marketing.
 
 ---
 
@@ -232,14 +231,14 @@ We visualized the **Top 10 Locations** using two key metrics:
 
 **(Montana & Alabama Deep Dive)**
 
-* **Montana**: Highest total purchase revenue.
-* **Alabama**: Highest number of previous purchases and average spend per customer.
-* Clothing was the top category in both states.
+- **Montana**: Highest total purchase revenue.
+- **Alabama**: Highest number of previous purchases and average spend per customer.
+- Clothing was the top category in both states.
 
 **Strategic takeaway:**
 
-* **Montana** is a high-value market.
-* **Alabama** indicates strong customer loyalty—ideal for retention programs.
+- **Montana** is a high-value market.
+- **Alabama** indicates strong customer loyalty—ideal for retention programs.
 
 ---
 
@@ -251,14 +250,14 @@ A bubble chart combined three metrics: **customer count**, **repeat purchases**,
 
 Key insights:
 
-* **Montana**: Top revenue and customer count, moderate loyalty.
-* **Illinois**: Balanced across all metrics – strong expansion candidate.
-* **California**: Large customer base but low loyalty – good testing ground for loyalty programs.
+- **Montana**: Top revenue and customer count, moderate loyalty.
+- **Illinois**: Balanced across all metrics – strong expansion candidate.
+- **California**: Large customer base but low loyalty – good testing ground for loyalty programs.
 
 **Strategic takeaway:**
 
-* Prioritize store placement in areas with **high density, loyalty, and spend**.
-* Deploy targeted promotions in regions with high potential but low engagement.
+- Prioritize store placement in areas with **high density, loyalty, and spend**.
+- Deploy targeted promotions in regions with high potential but low engagement.
 
 ---
 
@@ -266,73 +265,73 @@ Key insights:
 
 We found that while **Montana** generated the most revenue overall, **Alabama** customers made more repeat purchases and had a higher average spend. In terms of product categories, **Clothing** significantly outperformed **Accessories**, **Footwear**, and **Outerwear** in total sales.
 
-* In **Montana**, the top sellers were: socks, pants, and jeans.
-* In **Alabama**, the most popular items included: pants, shirts, skirts, and jeans.
+- In **Montana**, the top sellers were: socks, pants, and jeans.
+- In **Alabama**, the most popular items included: pants, shirts, skirts, and jeans.
 
 ---
 
 ## 🧠 Final Conclusions
 
-* The most attractive store locations combine:
+- The most attractive store locations combine:
 
-  * A **large customer base**
-  * **High loyalty** (repeat purchases)
-  * **Strong total spending**
+  - A **large customer base**
+  - **High loyalty** (repeat purchases)
+  - **Strong total spending**
 
-* These locations appear as **large, dark bubbles in the upper-right** quadrant of the scatter plot — ideal candidates for expansion.
+- These locations appear as **large, dark bubbles in the upper-right** quadrant of the scatter plot — ideal candidates for expansion.
 
 ### Key Insights:
 
-* **Montana** leads in **total revenue** but has moderate repeat purchases.
-* **Alabama** has **high loyalty** and **above-average spending per purchase**, suggesting strong customer relationships.
-* **Illinois** shows a **well-balanced profile**, making it a solid candidate for store growth.
-* **California** has the **largest customer base**, but lower loyalty — making it suitable for **targeted loyalty programs** before expansion.
-* Locations with:
+- **Montana** leads in **total revenue** but has moderate repeat purchases.
+- **Alabama** has **high loyalty** and **above-average spending per purchase**, suggesting strong customer relationships.
+- **Illinois** shows a **well-balanced profile**, making it a solid candidate for store growth.
+- **California** has the **largest customer base**, but lower loyalty — making it suitable for **targeted loyalty programs** before expansion.
+- Locations with:
 
-  * **High customers but low loyalty** = opportunity for **promotions or retention strategies**.
-  * **High loyalty but fewer customers** = potential for **niche or digital-first store formats**.
+  - **High customers but low loyalty** = opportunity for **promotions or retention strategies**.
+  - **High loyalty but fewer customers** = potential for **niche or digital-first store formats**.
 
 ### Location-Specific Observations:
 
-* **Montana**: High volume + maxed-out revenue = strong expansion target.
-* **Alabama**: Loyal, high-spending base = potential for deeper customer engagement.
-* **California**: Volume-rich but loyalty-lagging = needs retention focus.
+- **Montana**: High volume + maxed-out revenue = strong expansion target.
+- **Alabama**: Loyal, high-spending base = potential for deeper customer engagement.
+- **California**: Volume-rich but loyalty-lagging = needs retention focus.
 
 ### Location Analysis Summary:
 
 We identified:
 
-* **Top 10 locations by Total Purchase Amount** → Where the most **revenue** comes from.
-* **Top 10 locations by Number of Previous Purchases** → Where our most **frequent and engaged** customers are.
+- **Top 10 locations by Total Purchase Amount** → Where the most **revenue** comes from.
+- **Top 10 locations by Number of Previous Purchases** → Where our most **frequent and engaged** customers are.
 
 By comparing these two metrics, we gain insight into:
 
-* Which locations offer **high value and frequency**,
-* How to tailor **inventory**, **marketing**, and **customer loyalty** strategies.
+- Which locations offer **high value and frequency**,
+- How to tailor **inventory**, **marketing**, and **customer loyalty** strategies.
 
 These insights support **strategic decisions** around:
 
-* Expansion opportunities,
-* Targeted advertising,
-* Inventory planning, and
-* Loyalty program optimization across geographic areas.
+- Expansion opportunities,
+- Targeted advertising,
+- Inventory planning, and
+- Loyalty program optimization across geographic areas.
 
 ### 🧭 Strategic Recommendations:
 
-* 🏬 Focus expansion efforts on locations with high spending and moderate-to-high loyalty
+- 🏬 Focus expansion efforts on locations with high spending and moderate-to-high loyalty
 
-* 💳 Launch retention programs in high-traffic but low-loyalty regions like California
+- 💳 Launch retention programs in high-traffic but low-loyalty regions like California
 
-* 📦 Align inventory and product mixes with region-specific preferences (e.g., socks in Montana)
+- 📦 Align inventory and product mixes with region-specific preferences (e.g., socks in Montana)
 
-* 📣 Use targeted advertising based on spending patterns and loyalty clusters
+- 📣 Use targeted advertising based on spending patterns and loyalty clusters
 
-* 🔁 Prioritize repeat customer growth over one-time volume in saturated markets
+- 🔁 Prioritize repeat customer growth over one-time volume in saturated markets
 
 ### 📌 Bottom Line:
 
-* Montana, Alabama, and Illinois represent the strongest candidates for store expansion.
-* California and similar markets should be prioritized for loyalty-building campaigns before scaling physical presence.
+- Montana, Alabama, and Illinois represent the strongest candidates for store expansion.
+- California and similar markets should be prioritized for loyalty-building campaigns before scaling physical presence.
 
 ---
 
@@ -341,30 +340,29 @@ These insights support **strategic decisions** around:
 **⏳Ayshe's Reflection**
 
 - **What did I learn?**  
-  In this project, I focused on analyzing customer behavior across age, gender, and location. I created visualizations such as bar charts and a bubble plot to highlight purchasing trends and identify strategic locations for potential store expansion based on customer count and repeat purchases. This work helped me strengthen my skills in Python-based data visualization and exploratory analysis. 
+  In this project, I focused on analyzing customer behavior across age, gender, and location. I created visualizations such as bar charts and a bubble plot to highlight purchasing trends and identify strategic locations for potential store expansion based on customer count and repeat purchases. This work helped me strengthen my skills in Python-based data visualization and exploratory analysis.
 
 - **What challenges did I face? and How did I overcome those challenges?**  
-  One of the challenges I encountered was a Git merge conflict while pushing changes to the shared repository. With help from a teammate and learning support, I gained a better understanding of version control and how to resolve collaboration issues in Git. 
+  One of the challenges I encountered was a Git merge conflict while pushing changes to the shared repository. With help from a teammate and learning support, I gained a better understanding of version control and how to resolve collaboration issues in Git.
 
 - **If I had more time, what would I add?**  
-  If I had more time, I would have incorporated advanced visualization techniques to map potential store openings geographically and provide a more location-intelligent analysis on the US map. 
+  If I had more time, I would have incorporated advanced visualization techniques to map potential store openings geographically and provide a more location-intelligent analysis on the US map.
 
 - **What strength do I bring to a team?**  
   Overall, I bring analytical thinking, a willingness to learn, and a collaborative attitude to team environments. This project reinforced the importance of communication, clear versioning, and visual storytelling in delivering impactful data insights.
-
 
 **📚Crystal's Reflection**
 
 - **What did I learn?**  
   I learned how to clean and analyze real customer data to find useful information for business decisions. I also improved my skills using Python tools like pandas and matplotlib to create charts and explain results clearly.
 
-- **What challenges did I face?**   
+- **What challenges did I face?**  
   The data was not perfect — some parts were missing and some groups had more data than others, making it hard to get accurate answers. Also, working with the team online sometimes made communication and sharing work a little tricky.
 
-- **How did I overcome those challenges?**   
+- **How did I overcome those challenges?**  
   We fixed the data problems by balancing the groups and carefully cleaning mistakes. For teamwork, we used Git and communicated often to ensure everyone’s work fit together well.
 
-- **If I had more time, what would I add?**   
+- **If I had more time, what would I add?**  
   I would add better maps and tools to explore the best store locations, and create an interactive dashboard so the team and stakeholders can easily explore the data.
 
 - **What strength do I bring to a team?**  
@@ -375,17 +373,49 @@ These insights support **strategic decisions** around:
 - **What did you learn?**  
   Through this project, I improved my understanding of Git, including version control, branching strategies, and resolving merge conflicts. I also learned approaches for task assignments and team coordination. Additionally, I developed a better ability to explore and analyze data.
 
-- **What challenges did you face?** 
+- **What challenges did you face?**
   One of the biggest challenges was navigating Git, particularly when dealing with merge conflicts and troubleshooting errors. Another challenge was bringing all the pieces of the project together. It required condensing and reconciling everyone’s contributions into a cohesive final report.
 
 - **How did you overcome those challenges?**  
   We overcame these challenges through teamwork and communication. When issues came up, we collaborated to troubleshoot, shared knowledge, and supported each other. This collaborative approach made it possible to finalize the project efficiently and with a tight timeline despite some obstacles.
 
-- **If you had more time, what would you add?** 
+- **If you had more time, what would you add?**
   With more time, I would focus on creating more polished and meaningful visualizations, trying to incorporate interactive elements. I would also dedicate more time to exploratory data analysis (EDA) to identify which features were most relevant, ensuring that the resulting insights were as impactful as possible.
 
 - **What strengths did you bring to the team environment?**  
   I was available for all meetings as my schedule allowed it. Despite not having met in person, I tried to keep the work friendly and professional.
+
+**🍊Andrea's Reflection**
+
+- **What did I learn?**  
+  From my time in the program, I was able to apply my learning and gain practical knowledge in:
+  • importing datasets
+  • running preliminary data cleaning
+  • creating sample sets from the original dataset
+  • visualizing the relationship between spending volumes and location
+  • and contributing my analysis insights to the project’s ReadMe.
+
+- **What challenges did I face?**  
+  The main challenge in any group project is to strike a balance of contributions and ensuring everyone had a stake and a say in the project (including opting out of decision-making!). My biggest challenge as an individual contributor to the project was being the go-to person for solving Git challenges.
+  The preliminary data cleaning also posed some unique challenges for me. This was my first time cleaning a dataset, and I learned a lot from the experience. I also worked on designing an unfamiliar type of data visualization, which had quite the learning curve.
+
+- **How did I overcome those challenges?**  
+  On the collaboration front, in the areas where I brought valuable expertise, I was quick to jump in with meaningful contributions, as well as encouraging others to take advantage of the learning environment and try daunting tasks (like git merges!).
+  As the quasi-Git expert, I was happy to bring as much of my domain expertise in this area to the table whenever possible, and to translate between our learning support and the rest of the team when we needed to call for assistane in tackling Git entanglements beyond the scope of my expertise.
+  To solve my data cleaning challenges, I turned to my friends StackOverflow and GeeksforGeeks, combining through forums for any insights. With my visualization challenges, I turned to those same resources, as well as the documentation for Seaborn (the library I was using), and finally tapping-in our learning support staff for final guidance.
+
+- **If I had more time, what would I add?**  
+  More visualizations! My main contributions were project-success oriented (setting up the project, preliminary data cleaning, project management tasks, version control management, etc.), and by the time I made my visualization, my teammates had discovered other punchier visualizations.
+
+- **What strength do I bring to a team?**  
+  As an experienced GitHub group project collaborator, I took charge in:
+  - setting up the repos and project folders
+  - importing files and libraries
+  - guiding the project through its many stages
+  - reviewing my team’s PRs
+  - overseeing the git merges (and untangling the conflicts!)
+
+- You can read more about my experience on my [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7354567365897904128/)
 
 **🌟Mirian's Reflection**
 
@@ -404,10 +434,8 @@ These insights support **strategic decisions** around:
 - **What strengths did you bring to the team environment?** 
   My background helped me understand how to apply heatmaps for business analysis, allowing me to make contributions. I also brought strong GitHub skills, helping with code reviews and resolving merge conflicts to ensure smooth collaboration.
 
-
 ### Reproducibility
 
 All project code, data, and documentation are publicly accessible in our GitHub repository. The README includes detailed instructions on data access, software dependencies, and environment setup to enable full reproduction of the analysis and results.
 
 ---
-
